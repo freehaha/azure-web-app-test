@@ -11,8 +11,9 @@
     }
   },
   "globalHeaders": {
-    "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'",
-    "x-frame-options": "DENY"
+    "content-security-policy": "script-src 'self';object-src 'none';base-uri 'none';require-trusted-types-for 'script';",
+    "x-frame-options": "DENY",
+    "strict-transport-security": "max-age=63072000"
   },
   "mimeTypes": {
     ".json": "text/json"
